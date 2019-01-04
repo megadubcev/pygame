@@ -9,7 +9,7 @@ clock = pygame.time.Clock();
 
 
 class Ball:
-    def __init__(self, pos, r=10, color=pygame.Color('white'), v=(100, -100)):
+    def __init__(self, pos, r=10, color=pygame.Color('white'), v=(-100, -100)):
         self.x = pos[0]
         self.y = pos[1]
         self.r = r
