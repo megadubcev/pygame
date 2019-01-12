@@ -41,7 +41,7 @@ while running:
         if rect and event.type == pygame.MOUSEMOTION:
             rect.x2, rect.y2 = event.pos
         if event.type == pygame.KEYDOWN:
-            if event.key == 122 and event.mod == 64:
+            if event.key == 122 and event.mod == 64 and rects:
                 del rects[len(rects) - 1]
     for r in rects:
         r.draw()
