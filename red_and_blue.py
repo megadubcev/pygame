@@ -56,12 +56,7 @@ class Board:
 board = Board(5, 7)
 
 
-def render2(self):
-    for i in range(self.height):
-        for j in range(self.width):
-            pygame.draw.rect(screen, pygame.Color("white"),
-                             (self.left + j * self.cell_size, self.top + i * self.cell_size, self.cell_size,
-                              self.cell_size), 1)
+
 running = True
 while running:
     for event in pygame.event.get():
